@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="RadioButtonSimple">
+        <attr name="rbsContent" format="string|reference" />
+        <attr name="rbsSubContent" format="string|reference" />
+        <attr name="rbsTextColor" format="color|reference" />
+    </declare-styleable>
+
+</resources>

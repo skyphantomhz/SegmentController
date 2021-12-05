@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="segmented_margin_vertical">6dp</dimen>
+    <dimen name="segmented_text_size">14sp</dimen>
+    <dimen name="segmented_corners_radius">8dp</dimen>
+</resources>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.skyphantomhz.segmentedcontrol.RadioGroupComponent
+        android:id="@+id/rgc_segmentDate"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/segment_control_margin"
+        android:layout_marginTop="@dimen/segment_control_margin"
+        android:background="@drawable/background_segment_button"
+        android:padding="@dimen/segment_control_padding"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.skyphantomhz.segmentedcontrol.custom.RadioButtonSegment
+            android:id="@+id/rbs_daily"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/rbs_weekly"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:rbsContent="@string/daily" />
+
+        <com.skyphantomhz.segmentedcontrol.custom.RadioButtonSegment
+            android:id="@+id/rbs_weekly"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/rbs_monthly"
+            app:layout_constraintStart_toEndOf="@+id/rbs_daily"
+            app:layout_constraintTop_toTopOf="parent"
+            app:rbsContent="@string/weekly" />
+
+        <com.skyphantomhz.segmentedcontrol.custom.RadioButtonSegment
+            android:id="@+id/rbs_monthly"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/rbs_weekly"
+            app:layout_constraintTop_toTopOf="parent"
+            app:rbsContent="@string/monthly" />
+    </com.skyphantomhz.segmentedcontrol.RadioGroupComponent>
+</androidx.constraintlayout.widget.ConstraintLayout>
